@@ -3,13 +3,14 @@
 
 #include <string>
 using namespace std;
-
-//define visitor class here
-
-
-
-
-
-
-
-#endif
+ class Reptile : public Animal{
+   private:
+   string visitorName;
+   int ticketsBrought;
+   public:
+   Visitor(string visitorName, int ticketsBrought);
+   ~Visitor();
+    void displayInfo();
+ };
+ 
+ #endif
